@@ -27,8 +27,8 @@ As of now, the functionality is limited to just the creation of the select optio
 The method selectForm accepts three optional parameters, `string selected`, `array formAttributes`, and `array optionAttributes`. An example of it's use is shown below:
 
     $selected = 'US/Central';
-    $formAttributes = array('class' => 'swegForm', 'style' => 'float:left;');
-    $optionAttributes = array('class' => 'swegOption');
+    $formAttributes = array('class' => 'swegForm', 'style' => 'float:left;', 'name' => 'timezone');
+    $optionAttributes = array('customValue' => 'true');
 
     Timezone::selectForm($selected, $formAttributes, $optionAttributes);
 

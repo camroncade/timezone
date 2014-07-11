@@ -1,5 +1,8 @@
 <?php namespace Camroncade\Timezone;
 
+use DateTime;
+use DateTimeZone;
+
 class Timezone {
 	public $timezoneList =  array (
 	    '(UTC-11:00) Midway Island' => 'Pacific/Midway',
@@ -176,4 +179,23 @@ class Timezone {
 
 		return $string;
 	}
+
+	public function convertFromUTC($timestamp, $timezone, $format = 'Y-m-d H:i:s')
+	{
+        $date = new DateTime($timestamp, new DateTimeZone('UTC'));
+
+        $date->setTimezone(new DateTimeZone($timezone));
+
+        return $date->format($format);
+    } 
+
+    public function convertToUTC($timestamp, $timezone, $format = 'Y-m-d H:i:s')
+    {
+    	$date = new DateTime($timestamp, new DateTimeZone($timezone));
+
+        $date->setTimezone(new DateTimeZone('UTC'));
+
+        return $date->format($format);
+    }
+
 }
