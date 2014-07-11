@@ -1,6 +1,6 @@
 {
     "name": "camroncade/timezone",
-    "description": "",
+    "description": "Timezone select option form builder for PHP and Laravel.",
     "authors": [
         {
             "name": "Camron Cade",
