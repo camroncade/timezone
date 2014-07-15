@@ -22,7 +22,22 @@ Now it's ready for use!
 
 ## Usage
 
-As of now, the functionality is limited to just the creation of the select option. This is created by calling `Timezone::selectForm()`.
+### Timezone Convert Helper Functions
+
+The package includes two helper functions that make it easy to deal with displaying and storing timezones, `convertFromUTC()` and `convertToUTC`:
+
+Each function accepts two required parameters and a third optional parameter dealing with the format of the returned timestamp.
+
+    convertFromUTC($timestamp, $timezone, $format);
+    convertToUTC($timestamp, $timezone, $format);
+
+The first parameter accepts a timestamp, the second accepts the name of the timezone that you are converting to/from. The option values associated with the timezones included in the select form builder can be plugged into here as is. Alternatively, you can use any of [PHP's supported timezones](http://php.net/manual/en/timezones.php).
+
+The third parameter is optional, and default is set to `'Y-m-d H:i:s'`, which is how Laravel natively stores datetimes into the database (the `created_at` and `updated_at` columns).
+
+### Select Form Builder
+
+The package also includes a helper function for the creation of the select option. This is created by calling `Timezone::selectForm()`.
 
 The method selectForm accepts three optional parameters, `string selected`, `array formAttributes`, and `array optionAttributes`. An example of it's use is shown below:
 
