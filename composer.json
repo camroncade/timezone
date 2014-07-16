@@ -1,7 +1,7 @@
 {
     "name": "camroncade/timezone",
     "description": "Helps manage timezones in Laravel. Includes <select> form builder for timezones.",
-    "homepage": "http://camroncade.com",
+    "homepage": "http://www.camroncade.com/managing-timezones-with-laravel/",
     "keybords": ["timezone", "timezones"],
     "license": "MIT",
     "authors": [
