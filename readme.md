@@ -24,7 +24,7 @@ Now it's ready for use!
 
 ### Timezone Convert Helper Functions
 
-The package includes two helper functions that make it easy to deal with displaying and storing timezones, `convertFromUTC()` and `convertToUTC`:
+The package includes two helper functions that make it easy to deal with displaying and storing timezones, `convertFromUTC()` and `convertToUTC()`:
 
 Each function accepts two required parameters and a third optional parameter dealing with the format of the returned timestamp.
 

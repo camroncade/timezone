@@ -1,10 +1,13 @@
 {
     "name": "camroncade/timezone",
-    "description": "Timezone select option form builder for PHP and Laravel.",
+    "description": "Helps manage timezones in Laravel. Includes <select> form builder for timezones.",
+    "homepage": "http://camroncade.com",
+    "keybords": ["timezone", "timezones"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Camron Cade",
-            "email": "camron@sweg.co"
+            "email": "camron@camroncade.com"
         }
     ],
     "require": {
