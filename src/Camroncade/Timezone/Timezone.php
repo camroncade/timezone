@@ -166,12 +166,14 @@ class Timezone {
 
 		$string = "<select". $selectAttributesString .">\n";
 
-		if (isset($placeholder)) {
+		if (isset($placeholder) && (empty($selected)))
+		{
 		     $placeholder = "<option value='' disabled selected>{$placeholder}</option>";
-		    } else
-		    {
+		}
+		else
+		{
 		      $placeholder = null;
-		    }
+		}
 
 		$string = $string . $placeholder;
 		foreach ($this->timezoneList as $key => $value)
