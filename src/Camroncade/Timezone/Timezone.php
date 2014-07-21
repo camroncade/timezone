@@ -150,7 +150,7 @@ class Timezone {
 	    '(UTC+13:00) Nuku\'alofa' => 'Pacific/Tongatapu'
 	);
 
-	public function selectForm($selected = null, array $selectAttributes = [], array $optionAttributes = [])
+	public function selectForm($selected = null, $placeholder = null, array $selectAttributes = [], array $optionAttributes = [] )
 	{
 		$selectAttributesString = '';
 		foreach ($selectAttributes as $key => $value)
@@ -165,6 +165,17 @@ class Timezone {
 		}
 
 		$string = "<select". $selectAttributesString .">\n";
+
+		if (isset($placeholder) && (empty($selected)))
+		{
+		     $placeholder = "<option value='' disabled selected>{$placeholder}</option>";
+		}
+		else
+		{
+		      $placeholder = null;
+		}
+
+		$string = $string . $placeholder;
 		foreach ($this->timezoneList as $key => $value)
 		{
 			if ($selected == $value) {

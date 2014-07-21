@@ -39,13 +39,14 @@ The third parameter is optional, and default is set to `'Y-m-d H:i:s'`, which is
 
 The package also includes a helper function for the creation of the select option. This is created by calling `Timezone::selectForm()`.
 
-The method selectForm accepts three optional parameters, `string selected`, `array formAttributes`, and `array optionAttributes`. An example of it's use is shown below:
+The method selectForm accepts four optional parameters, `string selected`, `placeholder`, `array formAttributes`, and `array optionAttributes`. An example of it's use is shown below:
 
     $selected = 'US/Central';
+    $placeholder = 'Select a timezone';
     $formAttributes = array('class' => 'swegForm', 'style' => 'float:left;', 'name' => 'timezone');
     $optionAttributes = array('customValue' => 'true');
 
-    Timezone::selectForm($selected, $formAttributes, $optionAttributes);
+    Timezone::selectForm($selected, $placeholder, $formAttributes, $optionAttributes);
 
 Note that the `$selected` parameter matches the string to the values on each option, not the display text. The paratmeters `$formAttributes` and `$optionAttributes` can be used for styling, roles, and generally anything you need. This is useful for applying Twitter Bootstrap styling.
 
