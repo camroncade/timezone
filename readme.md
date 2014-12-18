@@ -6,13 +6,13 @@ This is a helper function that creates a select menu including timezones in huma
 
 Recommended installation of this package is through composer. Include the following in your project's `composer.json` file:
 
-    "require-dev": {
+    "require": {
     	"camroncade/timezone": "dev-master"
     }
 
 Next, update Composer from the Terminal:
 
-    composer update --dev
+    composer update
 
 Once this operation completes, the final step is to add the service provider. Open `app/config/app.`, and add a new item to the service providers array.
 
