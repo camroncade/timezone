@@ -19,8 +19,6 @@ class TimezoneServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('camroncade/timezone');
-
 		AliasLoader::getInstance()->alias('Timezone', 'Camroncade\Timezone\Facades\Timezone');
 	}
 
