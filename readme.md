@@ -7,7 +7,7 @@ This is a helper function that creates a select menu including timezones in huma
 Recommended installation of this package is through composer. Include the following in your project's `composer.json` file:
 
     "require": {
-    	"camroncade/timezone": "dev-master"
+    	"camroncade/timezone": "0.1"
     }
 
 Next, update Composer from the Terminal:
