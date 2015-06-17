@@ -150,6 +150,11 @@ class Timezone {
 	    '(UTC+13:00) Nuku\'alofa' => 'Pacific/Tongatapu'
 	);
 
+    public function getTimezones()
+    {
+        return $this->timezoneList;
+    }
+    
 	public function selectForm($selected = null, $placeholder = null, array $selectAttributes = [], array $optionAttributes = [] )
 	{
 		$selectAttributesString = '';
