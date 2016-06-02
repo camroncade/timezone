@@ -15,21 +15,21 @@ class TimezoneServiceProvider extends ServiceProvider {
 	/**
 	 * Bootstrap the application events.
 	 *
-	 * @return void
+	 * @return null
 	 */
 	public function boot()
 	{
-		AliasLoader::getInstance()->alias('Timezone', 'Camroncade\Timezone\Facades\Timezone');
+		AliasLoader::getInstance()->alias('Timezone', \Camroncade\Timezone\Facades\Timezone::class);
 	}
 
 	/**
 	 * Register the service provider.
 	 *
-	 * @return void
+	 * @return null
 	 */
 	public function register()
 	{
-		$this->app->bind('timezone', 'Camroncade\Timezone\Timezone');
+		$this->app->bind('timezone', Timezone::class);
 	}
 
 	/**
