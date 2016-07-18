@@ -28,8 +28,8 @@ The package includes two helper functions that make it easy to deal with display
 
 Each function accepts two required parameters and a third optional parameter dealing with the format of the returned timestamp.
 
-    convertFromUTC($timestamp, $timezone, $format);
-    convertToUTC($timestamp, $timezone, $format);
+    Timezone::convertFromUTC($timestamp, $timezone, $format);
+    Timezone::convertToUTC($timestamp, $timezone, $format);
 
 The first parameter accepts a timestamp, the second accepts the name of the timezone that you are converting to/from. The option values associated with the timezones included in the select form builder can be plugged into here as is. Alternatively, you can use any of [PHP's supported timezones](http://php.net/manual/en/timezones.php).
 
