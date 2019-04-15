@@ -117,6 +117,7 @@ class Timezone {
 	    '(UTC+08:00) Hong Kong' => 'Asia/Hong_Kong',
 	    '(UTC+08:00) Krasnoyarsk' => 'Asia/Krasnoyarsk',
 	    '(UTC+08:00) Kuala Lumpur' => 'Asia/Kuala_Lumpur',
+	    '(UTC+08:00) Manila' => 'Asia/Manila',
 	    '(UTC+08:00) Perth' => 'Australia/Perth',
 	    '(UTC+08:00) Singapore' => 'Asia/Singapore',
 	    '(UTC+08:00) Taipei' => 'Asia/Taipei',
